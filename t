@@ -44,26 +44,27 @@ outbounds:
       bindIPv4: 10.0.0.2
 
 acl:
-  - wg-out(suffix:instagram.com)
-  - wg-out(suffix:cdninstagram.com)
-  - wg-out(suffix:igcdn-cdninstagram.com)
+  inline:
+    - wg-out(suffix:instagram.com)
+    - wg-out(suffix:cdninstagram.com)
+    - wg-out(suffix:igcdn-cdninstagram.com)
 
-  - wg-out(suffix:facebook.com)
-  - wg-out(suffix:fbcdn.net)
-  - wg-out(suffix:messenger.com)
-  - wg-out(suffix:whatsapp.net)
+    - wg-out(suffix:facebook.com)
+    - wg-out(suffix:fbcdn.net)
+    - wg-out(suffix:messenger.com)
+    - wg-out(suffix:whatsapp.net)
 
-  - wg-out(suffix:x.com)
-  - wg-out(suffix:twitter.com)
-  - wg-out(suffix:t.co)
-  - wg-out(suffix:twimg.com)
+    - wg-out(suffix:x.com)
+    - wg-out(suffix:twitter.com)
+    - wg-out(suffix:t.co)
+    - wg-out(suffix:twimg.com)
 
-  - wg-out(suffix:spotify.com)
-  - wg-out(suffix:scdn.co)
-  - wg-out(suffix:audio-fa.scdn.co)
-  - wg-out(suffix:audio-sp.scdn.co)
+    - wg-out(suffix:spotify.com)
+    - wg-out(suffix:scdn.co)
+    - wg-out(suffix:audio-fa.scdn.co)
+    - wg-out(suffix:audio-sp.scdn.co)
 
-  - wg-out(suffix:soundcloud.com)
-  - wg-out(suffix:sndcdn.com)
+    - wg-out(suffix:soundcloud.com)
+    - wg-out(suffix:sndcdn.com)
 
-  - default-out(all)
+    - default-out(all)
