@@ -4,8 +4,8 @@
   },
   "dns": {
     "servers": [
-      { "address": "1.1.1.1" },
-      { "address": "1.0.0.1" }
+      { "address": "1.1.1.1", "detour": "direct" },
+      { "address": "1.0.0.1", "detour": "direct" }
     ]
   },
   "inbounds": [
@@ -42,6 +42,10 @@
   ],
   "outbounds": [
     {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
       "type": "wireguard",
       "tag": "wg-social",
       "server": "213.142.133.113",
@@ -54,14 +58,12 @@
       "domain_strategy": "prefer_ipv4"
     },
     {
-      "type": "direct"
-    },
-    {
       "tag": "block",
       "type": "block"
     }
   ],
   "route": {
+    "final": "direct",
     "rules": [
       {
         "domain_suffix": [
