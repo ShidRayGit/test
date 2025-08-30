@@ -45,26 +45,26 @@ outbounds:
 
 acl:
   inline:
-    - wg-out(suffix:instagram.com)
-    - wg-out(suffix:cdninstagram.com)
-    - wg-out(suffix:igcdn-cdninstagram.com)
+    - { rule: "suffix", value: "instagram.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "cdninstagram.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "igcdn-cdninstagram.com", outbound: "wg-out" }
 
-    - wg-out(suffix:facebook.com)
-    - wg-out(suffix:fbcdn.net)
-    - wg-out(suffix:messenger.com)
-    - wg-out(suffix:whatsapp.net)
+    - { rule: "suffix", value: "facebook.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "fbcdn.net", outbound: "wg-out" }
+    - { rule: "suffix", value: "messenger.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "whatsapp.net", outbound: "wg-out" }
 
-    - wg-out(suffix:x.com)
-    - wg-out(suffix:twitter.com)
-    - wg-out(suffix:t.co)
-    - wg-out(suffix:twimg.com)
+    - { rule: "suffix", value: "x.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "twitter.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "t.co", outbound: "wg-out" }
+    - { rule: "suffix", value: "twimg.com", outbound: "wg-out" }
 
-    - wg-out(suffix:spotify.com)
-    - wg-out(suffix:scdn.co)
-    - wg-out(suffix:audio-fa.scdn.co)
-    - wg-out(suffix:audio-sp.scdn.co)
+    - { rule: "suffix", value: "spotify.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "scdn.co", outbound: "wg-out" }
+    - { rule: "suffix", value: "audio-fa.scdn.co", outbound: "wg-out" }
+    - { rule: "suffix", value: "audio-sp.scdn.co", outbound: "wg-out" }
 
-    - wg-out(suffix:soundcloud.com)
-    - wg-out(suffix:sndcdn.com)
+    - { rule: "suffix", value: "soundcloud.com", outbound: "wg-out" }
+    - { rule: "suffix", value: "sndcdn.com", outbound: "wg-out" }
 
-    - default-out(all)
+    - { rule: "all", outbound: "default-out" }
