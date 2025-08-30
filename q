@@ -1,23 +1,3 @@
-2025-08-30T12:31:05Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "140.233.187.128:888", "error": "dial tcp4 140.233.187.128:888: i/o timeout"}
-
-2025-08-30T12:31:05Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "185.244.183.88:23", "error": "dial tcp4 185.244.183.88:23: i/o timeout"}
-
-2025-08-30T12:31:05Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "77.232.41.146:443", "error": "dial tcp4 77.232.41.146:443: i/o timeout"}
-
-2025-08-30T12:31:10Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "140.233.187.128:888", "error": "dial tcp4 140.233.187.128:888: connect: no route to host"}
-
-2025-08-30T12:31:11Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "140.233.187.128:888", "error": "dial tcp4 140.233.187.128:888: i/o timeout"}
-
-2025-08-30T12:31:11Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "185.244.183.88:23", "error": "dial tcp4 185.244.183.88:23: i/o timeout"}
-
-2025-08-30T12:31:11Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "148.251.138.114:23", "error": "dial tcp4 148.251.138.114:23: i/o timeout"}
-
-2025-08-30T12:31:11Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "77.232.41.146:443", "error": "dial tcp4 77.232.41.146:443: i/o timeout"}
-
-2025-08-30T12:31:16Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "185.244.183.88:23", "error": "dial tcp4 185.244.183.88:23: i/o timeout"}
-
-2025-08-30T12:31:16Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "148.251.138.114:23", "error": "dial tcp4 148.251.138.114:23: i/o timeout"}
-
 2025-08-30T12:31:16Z [33mWARN[0m TCP error {"addr": "2.177.150.185:54245", "id": "1706.37924341_e23a", "reqAddr": "77.232.41.146:443", "error": "dial tcp4 77.232.41.146:443: i/o timeout"}
 
 2025-08-30T12:31:17Z [33mWARN[0m TCP error {"addr": "5.121.14.222:53888", "id": "1329.bahrammajnini", "reqAddr": "media.steampowered.com:200", "error": "dial tcp4 23.35.105.96:200: i/o timeout"}
@@ -185,3 +165,15 @@
 2025-08-30T12:36:43Z [34mINFO[0m server mode
 
 2025-08-30T12:36:43Z [31mFATAL[0m failed to parse server config {"error": "1 error(s) decoding:\n\n* 'acl' expected a map, got 'slice'"}
+
+2025-08-30T12:40:38Z [34mINFO[0m server mode
+
+2025-08-30T12:40:38Z [34mINFO[0m maintenance started background certificate maintenance {"cache": "0xc000115880"}
+
+2025-08-30T12:40:38Z [33mWARN[0m stapling OCSP {"error": "no OCSP stapling for [putin.fizikade.ir]: no OCSP server specified in certificate", "identifiers": ["putin.fizikade.ir"]}
+
+2025-08-30T12:40:38Z [31mFATAL[0m failed to load server config {"error": "invalid config: acl.inline: invalid syntax at line 1: wg-out(suffix:instagram.com)"}
+
+2025-08-30T12:42:06Z [34mINFO[0m server mode
+
+2025-08-30T12:42:06Z [31mFATAL[0m failed to parse server config {"error": "18 error(s) decoding:\n\n* 'acl.inline[0]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:instagram.com]'\n* 'acl.inline[10]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:twimg.com]'\n* 'acl.inline[11]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:spotify.com]'\n* 'acl.inline[12]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:scdn.co]'\n* 'acl.inline[13]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:audio-fa.scdn.co]'\n* 'acl.inline[14]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:audio-sp.scdn.co]'\n* 'acl.inline[15]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:soundcloud.com]'\n* 'acl.inline[16]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:sndcdn.com]'\n* 'acl.inline[17]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:default-out rule:all]'\n* 'acl.inline[1]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:cdninstagram.com]'\n* 'acl.inline[2]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:igcdn-cdninstagram.com]'\n* 'acl.inline[3]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:facebook.com]'\n* 'acl.inline[4]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:fbcdn.net]'\n* 'acl.inline[5]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:messenger.com]'\n* 'acl.inline[6]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:whatsapp.net]'\n* 'acl.inline[7]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:x.com]'\n* 'acl.inline[8]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:twitter.com]'\n* 'acl.inline[9]' expected type 'string', got unconvertible type 'map[string]interface {}', value: 'map[outbound:wg-out rule:suffix value:t.co]'"}
